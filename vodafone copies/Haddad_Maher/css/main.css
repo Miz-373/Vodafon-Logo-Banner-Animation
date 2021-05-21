@@ -1,0 +1,163 @@
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot");
+  src: url("../fonts/fontawesome-webfont.eot") format("embedded-opentype"),
+    url("../fonts/fontawesome-webfont.woff2") format("woff2"),
+    url("../fonts/fontawesome-webfont.woff") format("woff"),
+    url("../fonts/fontawesome-webfont.ttf") format("truetype"),
+    url("../fonts/fontawesome-webfont.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SourceCode";
+  src: url("../fonts/SourceCodePro-Regular.ttf");
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  background-color: #333;
+  overflow: hidden;
+}
+#demoBackground {
+  position: absolute;
+  background-color: #000;
+  overflow: hidden;
+  width: 960px;
+  height: 220px;
+  perspective: 700px;
+  line-height: normal;
+  font-size: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#firstTEXT,
+.featureTextOrange,
+.featureTextWhite {
+  text-align: center;
+  font-size: 40px;
+  opacity: 0;
+  position: absolute;
+  font-family: "SourceCode", "Helvetica Neue", Arial, Verdana, sans-serif;
+}
+.featureTextWhite {
+  width: 940px;
+  text-transform: uppercase;
+  top: 40%;
+  opacity: 0;
+  color: white;
+}
+.featureTextOrange {
+  color: #ffa500;
+  font-weight: bold;
+  left: 50%;
+  top: 50%;
+  margin-left: -120px;
+  margin-top: -25px;
+  opacity: 0;
+}
+#timeline_txt {
+  transform-origin: 0% 1000%;
+  opacity: 0;
+}
+#sae_logo {
+  position: absolute;
+  height: 120px;
+  width: 150px;
+  margin-left: -75px;
+  margin-top: -60px;
+  top: 80px;
+  left: 115px;
+}
+.cls-1 {
+  fill: #fff;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 0;
+  stroke-miterlimit: 10;
+}
+
+#sae_icons {
+  position: absolute;
+  top: 30%;
+  left: 330px;
+  width: 323px;
+  height: 100px;
+}
+
+.vfx {
+  fill: #00a6b4;
+  opacity: 0;
+}
+.audio {
+  fill: #3973b8;
+  opacity: 0;
+}
+.film {
+  fill: #fab900;
+  opacity: 0;
+}
+.games {
+  fill: #e01f1d;
+  opacity: 0;
+}
+.web {
+  fill: #764896;
+  opacity: 0;
+}
+
+#tagline {
+  position: absolute;
+  left: 246px;
+  top: 38%;
+  height: 26px;
+  opacity: 0;
+}
+#tagline span {
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+}
+#tagline img {
+  height: 50px;
+  opacity: 0;
+}
+#enquire {
+  text-transform: uppercase;
+  position: absolute;
+  left: 45%;
+  top: 120px;
+  cursor: pointer;
+  color: #fff;
+  font-family: "SourceCode", Helvetica, Arial, Verdana, sans-serif;
+  font-size: 16px;
+  z-index: 1000;
+  opacity: 0;
+}
+#enquire a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: orange;
+  padding: 15px 20px;
+  width: 150px;
+  opacity: 0;
+}
+#enquire a:hover {
+  background-color: darkorange;
+}
+#enquire i,
+#enquire span {
+  display: block;
+  opacity: 0;
+}
